@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Magic</title>
+  
+</head>
+    <body>
+
+        <h1 style="color:green;">Box Magic!</h1>
+
+        <div id="box" style="height:150px; width:150px; background-color:rgb(219, 15, 234); margin:25px"></div>
+       
+        <button id="bluebtn">
+            Make the box blue
+        </button>
+        <button id="rightbtn">
+            Move the box right
+        </button>
+        <button id="borderbtn">
+            Make a box border
+        </button>
+        <button id="startpositionbtn">
+            Move box back to start
+        </button>
+
+    <script type="text/javascript">
+
+        document.getElementById("bluebtn").addEventListener("click",
+         function() {
+         document.getElementById
+            ("box").style.backgroundColor = "blue";
+         });
+
+        document.getElementById("rightbtn").addEventListener("click",
+        function() {
+            document.getElementById("box").style.marginLeft = "600px";
+        });
+
+        document.getElementById("borderbtn").addEventListener("click",
+        function() {
+            document.getElementById("box").style.border = "20px dashed black";
+        });
+
+        document.getElementById("startpositionbtn").addEventListener("click",
+        function() {
+            document.getElementById("box").style.margin = "25px";
+        });
+    </script>
+    </body>
+</html>
